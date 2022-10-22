@@ -41,6 +41,7 @@ class AlbumViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        layout()
     }
     
     func layout() {
@@ -141,6 +142,6 @@ extension AlbumViewController: UICollectionViewDelegateFlowLayout {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         headerView?.scrollViewDidScroll(scrollView)
-        
+        floatingHeaderView.scrollViewDidScroll(scrollView)
     }
 }

@@ -25,7 +25,7 @@ class HeaderView: UICollectionReusableView {
     var track: Track? {
         didSet {
             guard let track = track else { return }
-            let image = UIImage(named: track.imageName) ?? UIImage(named: "placeholder")!
+            let image = UIImage(named: track.imageName) ?? UIImage(named: "tron")!
             
             imageView.image = image
         }
