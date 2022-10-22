@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		08DB04C729032E7700F212E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DB04C629032E7700F212E2 /* AppDelegate.swift */; };
 		08DB04C929032E7700F212E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DB04C829032E7700F212E2 /* SceneDelegate.swift */; };
-		08DB04CB29032E7700F212E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DB04CA29032E7700F212E2 /* ViewController.swift */; };
+		08DB04CB29032E7700F212E2 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DB04CA29032E7700F212E2 /* AlbumViewController.swift */; };
 		08DB04CE29032E7700F212E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DB04CC29032E7700F212E2 /* Main.storyboard */; };
 		08DB04D029032E7900F212E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08DB04CF29032E7900F212E2 /* Assets.xcassets */; };
 		08DB04D329032E7900F212E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DB04D129032E7900F212E2 /* LaunchScreen.storyboard */; };
+		08DB04DC290483E300F212E2 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DB04DB290483E300F212E2 /* ListCell.swift */; };
+		08DB04DE2904858F00F212E2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DB04DD2904858F00F212E2 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08DB04C329032E7700F212E2 /* Spotify Album.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spotify Album.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DB04C629032E7700F212E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08DB04C829032E7700F212E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		08DB04CA29032E7700F212E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08DB04CA29032E7700F212E2 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		08DB04CD29032E7700F212E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08DB04CF29032E7900F212E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08DB04D229032E7900F212E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08DB04D429032E7900F212E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08DB04DB290483E300F212E2 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		08DB04DD2904858F00F212E2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		08DB04C529032E7700F212E2 /* Spotify Album */ = {
 			isa = PBXGroup;
 			children = (
+				08DB04DA29032EB900F212E2 /* Files */,
+				08DB04CA29032E7700F212E2 /* AlbumViewController.swift */,
+				08DB04DB290483E300F212E2 /* ListCell.swift */,
+				08DB04DD2904858F00F212E2 /* HeaderView.swift */,
+			);
+			path = "Spotify Album";
+			sourceTree = "<group>";
+		};
+		08DB04DA29032EB900F212E2 /* Files */ = {
+			isa = PBXGroup;
+			children = (
 				08DB04C629032E7700F212E2 /* AppDelegate.swift */,
 				08DB04C829032E7700F212E2 /* SceneDelegate.swift */,
-				08DB04CA29032E7700F212E2 /* ViewController.swift */,
 				08DB04CC29032E7700F212E2 /* Main.storyboard */,
 				08DB04CF29032E7900F212E2 /* Assets.xcassets */,
 				08DB04D129032E7900F212E2 /* LaunchScreen.storyboard */,
 				08DB04D429032E7900F212E2 /* Info.plist */,
 			);
-			path = "Spotify Album";
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08DB04CB29032E7700F212E2 /* ViewController.swift in Sources */,
+				08DB04DE2904858F00F212E2 /* HeaderView.swift in Sources */,
+				08DB04CB29032E7700F212E2 /* AlbumViewController.swift in Sources */,
+				08DB04DC290483E300F212E2 /* ListCell.swift in Sources */,
 				08DB04C729032E7700F212E2 /* AppDelegate.swift in Sources */,
 				08DB04C929032E7700F212E2 /* SceneDelegate.swift in Sources */,
 			);
